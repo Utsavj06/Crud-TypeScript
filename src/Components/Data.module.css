@@ -1,0 +1,32 @@
+.Container{
+    width:100%;
+    height:150px;
+    display:flex;
+    align-items:center;
+    padding-top: 20px;
+    flex-direction: column;
+    gap:30px;    
+}
+
+.Container_color{
+    width:60%;
+    height:250px;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Container_Contents{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Icons{
+    display:flex;
+    width: 100px;
+    gap:10px;
+    padding-top: 25px;
+}

@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React , {useEffect, useState} from 'react';
 import './App.css';
+import Data from './Components/Data';
+import Input from './Components/Input';
+import { IDataList } from './Components/types';
 
 function App() {
+  
+  const [entryData , setEntryData] = useState<IDataList[]>([]);
+
+  const getEntry = (data:string) => {
+    //console.log(entry)
+    const note = {
+      data: data,
+      createdOn: Date.now().toString(),
+      id:Date.now()
+    }
+    entryData.push(note);
+    setEntryData([...entryData])
+  }
+
+  const RemoveItem = (index:number) => {
+     entryData.splice(index,1)
+     setEntryData([...entryData])
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Input getEntry={getEntry} />
+      <Data listData={entryData} delete={RemoveItem} />
     </div>
   );
 }
