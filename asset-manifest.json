@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Crud-TypeScript/static/css/main.52378314.css",
+    "main.js": "/Crud-TypeScript/static/js/main.e9982ab6.js",
+    "index.html": "/Crud-TypeScript/index.html",
+    "main.52378314.css.map": "/Crud-TypeScript/static/css/main.52378314.css.map",
+    "main.e9982ab6.js.map": "/Crud-TypeScript/static/js/main.e9982ab6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52378314.css",
+    "static/js/main.e9982ab6.js"
+  ]
+}
