@@ -15,14 +15,15 @@ const Input:FC<IInputProps> = props => {
   }
 
   const handleAddData = () => {
-    getEntry(entry)
+    getEntry(entry);
+    setEntry("");
   }
 
   return (
     //<div className={`${commonCss.Container}`}>        ==> Use of Material UI CSS
     <div className={Styles.Container}>
         <div className={Styles.Container_Input}>
-             <input type='text' placeholder='...'  onChange={dataEntry} />
+             <input type='text' placeholder='...' value={entry} onChange={dataEntry} />
              <AddCircleTwoToneIcon style={{paddingTop:"1px", paddingRight:"10px", fontSize:"25px" , color:'red'}} onClick={handleAddData} />
         </div>
     </div>

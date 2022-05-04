@@ -12,7 +12,7 @@ function App() {
     //console.log(entry)
     const note = {
       data: data,
-      createdOn: Date.now().toString(),
+      createdOn: new Date().toLocaleTimeString(),
       id:Date.now()
     }
     entryData.push(note);
@@ -27,7 +27,7 @@ function App() {
   return (
     <div className="App">
       <Input getEntry={getEntry} />
-      <Data listData={entryData} delete={RemoveItem} />
+      <Data listData={entryData} remove={RemoveItem} />
     </div>
   );
 }

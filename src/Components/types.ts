@@ -17,5 +17,9 @@
 
   export interface IDataProps {
     listData: IDataList[];
-    delete: (index: number) => void;
+    remove: (index: number) => void;
   } 
+
+  export interface IModalProp {
+   
+  }
