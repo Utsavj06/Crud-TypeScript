@@ -1,11 +1,9 @@
-import React, {useState , useEffect , FC} from 'react'
+import React, {useState, FC} from 'react'
 import Styles from "./Input.module.css"
-//import { commonStyles } from './styles'  ==> import Styles of Material UI
 import AddCircleTwoToneIcon from '@mui/icons-material/AddCircleTwoTone';
 import {IInputProps } from './types';
 
 const Input:FC<IInputProps> = props => {
-  //const commonCss=commonStyles();  ==>  to get CSS from Material UI
   const {getEntry} = props;
 
   const [entry , setEntry]=useState<string>("")
@@ -20,7 +18,6 @@ const Input:FC<IInputProps> = props => {
   }
 
   return (
-    //<div className={`${commonCss.Container}`}>        ==> Use of Material UI CSS
     <div className={Styles.Container}>
         <div className={Styles.Container_Input}>
              <input type='text' placeholder='...' value={entry} onChange={dataEntry} />
@@ -32,5 +29,3 @@ const Input:FC<IInputProps> = props => {
 
 export default Input
 
-
-// NOTE : There is File Called style.tsx having CSS of Material

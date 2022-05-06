@@ -13,7 +13,8 @@ function App() {
     const note = {
       data: data,
       createdOn: new Date().toLocaleTimeString(),
-      id:Date.now()
+      id:Date.now(),
+      dataShow:false
     }
     entryData.push(note);
     setEntryData([...entryData])
@@ -24,10 +25,22 @@ function App() {
      setEntryData([...entryData])
   }
 
+  const UpdateDataList = (data: IDataList) => {
+    console.log(data)
+    const temp = (entryData as Array<IDataList>).map(item=>{
+      if(item.id===data.id){
+        return data;
+      }
+      return item;
+    })
+    setEntryData(temp);
+  }
+
+
   return (
     <div className="App">
       <Input getEntry={getEntry} />
-      <Data listData={entryData} remove={RemoveItem} />
+      <Data listData={entryData} remove={RemoveItem} updateData={UpdateDataList} />
     </div>
   );
 }

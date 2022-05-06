@@ -1,5 +1,48 @@
-.modal{
-    height: 100px;
-    width: 100px;
+#portal-root {
+    position: relative;
+    z-index: 0;
+  }
+
+.modal {
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+.modal_content{
+    height: 30%;
+    width: 30%;
     background-color: yellow;
+    top:"100px";
+}
+
+.modal_content input {
+    height: 15%;
+    width: 280px;
+    margin-top: 40px;
+}
+
+.cross{
+    margin: 10px 15px;
+    cursor:pointer;
+}
+
+.input  {
+    display: flex;
+    justify-content: center;
+}
+
+.input input {
+    height: 20px;
+    outline: none;
+}
+
+.input input :focus {
+    border:none;
 }
