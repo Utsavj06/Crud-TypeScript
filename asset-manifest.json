@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Crud-TypeScript/static/css/main.52378314.css",
-    "main.js": "/Crud-TypeScript/static/js/main.e9982ab6.js",
+    "main.css": "/Crud-TypeScript/static/css/main.ceb662f0.css",
+    "main.js": "/Crud-TypeScript/static/js/main.19f9d780.js",
     "index.html": "/Crud-TypeScript/index.html",
-    "main.52378314.css.map": "/Crud-TypeScript/static/css/main.52378314.css.map",
-    "main.e9982ab6.js.map": "/Crud-TypeScript/static/js/main.e9982ab6.js.map"
+    "main.ceb662f0.css.map": "/Crud-TypeScript/static/css/main.ceb662f0.css.map",
+    "main.19f9d780.js.map": "/Crud-TypeScript/static/js/main.19f9d780.js.map"
   },
   "entrypoints": [
-    "static/css/main.52378314.css",
-    "static/js/main.e9982ab6.js"
+    "static/css/main.ceb662f0.css",
+    "static/js/main.19f9d780.js"
   ]
 }
